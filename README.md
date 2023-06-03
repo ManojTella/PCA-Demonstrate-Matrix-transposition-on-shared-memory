@@ -24,11 +24,11 @@ Inroduce the main function, in the main method set up the device ,array size and
 ### Step 6 :
 Save and execute the program.
 ### Program:
- 
+```
 Developed By: Manoj Guna Sundar Tella.
 Reg.No:212221240026.
-
-
+```
+```
 #include "common.h"
 #include <cuda_runtime.h>
 #include <stdio.h>
@@ -296,10 +296,10 @@ int main(int argc, char **argv)
     CHECK(cudaDeviceReset());
     return EXIT_SUCCESS;
 }
-
+```
 
 ## Output:
-
+```
 root@MidPC:/home/student/Desktop# nvcc test.cu
 root@MidPC:/home/student/Desktop# ./a.out
 ./a.out at device 0: NVIDIA GeForce GTX 1660 SUPER with Bank Mode:4-Byte <<< grid (1,1) block (16,16)>>>
@@ -335,7 +335,7 @@ root@MidPC:/home/student/Desktop# nvprof ./a.out
                     0.00%     750ns         2     375ns     170ns     580ns  cuDeviceGet
                     0.00%     240ns         1     240ns     240ns     240ns  cuDeviceGetUuid
 root@MidPC:/home/student/Desktop# 106
-
+```
 ![4](https://github.com/nithin-popuri7/PCA-Demonstrate-Matrix-transposition-on-shared-memory/assets/94154780/7ef00a9d-806c-4a20-9776-ebdb496990f0)
 
 
